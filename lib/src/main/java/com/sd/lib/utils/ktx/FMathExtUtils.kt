@@ -11,8 +11,6 @@ package com.sd.lib.utils.ktx
  * @param outputMin  输出最小值
  * @param outputMax  输出最大值
  * @param inputValue 输入值
- * @param scale      最多保留几位小数
- * @param mode       舍入模式
  */
 fun fScaleBoundsValue(
     inputMin: Double, inputMax: Double,
