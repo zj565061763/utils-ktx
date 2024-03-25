@@ -19,8 +19,7 @@ class FLoopIndexer @JvmOverloads constructor(
     }
 
     fun increment(): Int {
-        val index = _index + 1
-        _index = if (index < _size) index else 0
+        _index = (_index + 1).takeIf { it < _index } ?: 0
         return _index
     }
 }
