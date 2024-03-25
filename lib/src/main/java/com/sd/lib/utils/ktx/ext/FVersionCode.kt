@@ -5,7 +5,7 @@ import android.content.SharedPreferences
 import com.sd.lib.ctx.fContext
 import com.sd.lib.utils.ktx.fVersionCode
 
-class FVersionCode internal constructor(
+class FVersionCode private constructor(
     /** 版本类型  */
     val type: String,
 
